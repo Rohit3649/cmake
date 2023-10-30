@@ -64,3 +64,7 @@ If you want to build the *ExternalLibraries_Executable*, you could do the follow
 
 cd build
 make ExternalLibraries_Executable
+
+## Generate doxygen doc
+cd docs
+doxygen
