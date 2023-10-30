@@ -1,6 +1,5 @@
 set(LIBRARY_SOURCES
-    "my_lib.cc"
-    "my_lib2.cc")
+    "my_lib.cc")
 set(LIBRARY_HEADERS
     "my_lib.h")
 

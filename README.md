@@ -46,3 +46,21 @@ cd build
 cmake -DMY_OPTION=[ON|OFF] ..
 
 -D is used with options and variables both
+
+
+## Specify the Build Target (Option 1)
+The standard build command would build all created targets within the CMakeLists.
+If you want to build a specific target, you can do so.
+
+cd build
+cmake --build . --target ExternalLibraries_Executable
+
+The target *ExternalLibraries_Executable* is just an example of a possible target name.
+Note: All dependent targets will be built beforehand.
+
+## Specify the Build Target (Option 2) Doesn't work on Windows (Generator is not make file)
+Besides setting the target within the cmake build command, you could also run the previously generated Makefile (from the generating step).
+If you want to build the *ExternalLibraries_Executable*, you could do the following.
+
+cd build
+make ExternalLibraries_Executable
