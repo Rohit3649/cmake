@@ -17,6 +17,13 @@ Assuming that you have already built the CMake project, you can update the gener
 cd build
 cmake .
 
+## Generator for GCC and Clang
+// Generator is build system that CMake use user the hood
+
+cd build
+cmake -S .. -B . -G "Unix Makefiles" # Option 1
+cmake .. -G "Unix Makefiles" # Option 2
+
 ## Generator for MSVC
 
 cd build
@@ -30,3 +37,12 @@ If you want to generate the project, for example, in release mode you have to se
 
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
+
+
+## Passing Options
+If you have set some options in the CMakeLists, you can pass values in the command line.
+
+cd build
+cmake -DMY_OPTION=[ON|OFF] ..
+
+-D is used with options and variables both
