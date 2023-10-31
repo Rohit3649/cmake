@@ -12,6 +12,7 @@ set(EXECUTABLE_NAME Executable)
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(AddGitSubmodule)
 include(FetchContent)
+include(Docs)
 
 
 #Library or target name inside library CMake file
